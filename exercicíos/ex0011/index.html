@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML.</title>
+</head>
+<body>
+<H1>Imagens dinâmicas</H1>
+    <P>Tente abrir esse site em vários dispositivos diferentes, ou simplesmente aumente e diminua o tamanho do seu navegador.</P>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos reproduzir um áudios em HTML5.</p>
+    <!-- MP3, OGG, WAV-->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/Thump and Jump.mp3" type="audio/mpeg">
+        <source src="midia/Thump and Jump.ogg" type="audio/ogg">
+        <source src="midia/Thump and Jump.wav" type="audio/wav">
+        <p>Infelizmente o seu navegador não consegue reproduzir áudio, <a href="midia/Thump and Jump.mp3">clique aqui</a> para baixar a versão em mp3.</p>
+    </audio>
+</body>
+</html>
